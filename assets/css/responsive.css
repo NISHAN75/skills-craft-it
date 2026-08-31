@@ -73,7 +73,7 @@
    ================================================================== */
 @media (max-width: 991.98px) {
 
-    
+        .sc-dashboard { margin-top: 10px; }
 
 
 }
@@ -93,7 +93,8 @@
    down, product-catalog heading min-height removed.
    ================================================================== */
 @media (max-width: 575.98px) {
-   
+    .sc-dashboard-row { flex-direction: column; }
+    .sc-hero-content { border-left: 0; padding-left: 0; }
 }
 
 /* ==================================================================

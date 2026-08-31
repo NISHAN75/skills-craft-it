@@ -54,8 +54,10 @@
    Quick helper classes to force a specific font-family on an element.
    ================================================================== */
 
-.tk-acumin-pro { font-family: "acumin-pro",sans-serif; }
-.tk-acumin-pro-condensed { font-family: "acumin-pro-condensed",sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+.tk-Inter { font-family: "Inter", sans-serif; }
+.tk-manrope { font-family: "Manrope", sans-serif; }
 
 
 /* ==================================================================
@@ -67,7 +69,7 @@ body {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    font-family: "acumin-pro", sans-serif;
+    font-family: "Inter", sans-serif;
     color: #000;
     
 }
@@ -104,7 +106,7 @@ html.lenis body {
    ================================================================== */
 
 .os-scrollbar-handle {
-    background: #E31827;
+    background: #4CD7F6;
 }
 body>.os-scrollbar {
     z-index: 999;
@@ -202,7 +204,7 @@ textarea {
     background: #fff;
     border: 1px solid #000;
     color: #DBDBDB;
-    font-family: "acumin-pro",sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -217,7 +219,7 @@ input:focus , textarea:focus{
 }
 ::placeholder {
     color: #DBDBDB;
-    font-family: "acumin-pro",sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -244,23 +246,23 @@ h6 {
     color: #134060;
     font-weight: 600;
     line-height: 1.05;
-    font-family: "acumin-pro-condensed",sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 h1 {
-    font-size: clamp(45px, 5vw, 56px);
+    font-size: clamp(36px, 5vw, 56px);
 }
 
 h2 {
-    font-size: clamp(40px, 4.5vw, 50px);
+    font-size: clamp(30px, 4.5vw, 50px);
 }
 
 h3 {
-    font-size: clamp(36px, 4vw, 40px);
+    font-size: clamp(28px, 4vw, 40px);
 }
 
 h4 {
-    font-size: clamp(30px, 3.5vw, 35px);
+    font-size: clamp(24px, 3.5vw, 35px);
 }
 
 h5 {
@@ -280,7 +282,7 @@ h6 {
 .us-btn-1 {
     display: inline-block;
     color: #FFF;
-    font-family: "acumin-pro", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.5;
@@ -328,6 +330,7 @@ h6 {
     z-index: 999;
     padding: 18px 0;
     transition: padding 0.3s ease;
+    box-shadow: 0 1px 8px rgba(231, 236, 251, 0.8);
 }
 .header-area::before{
     content: "";
@@ -352,7 +355,7 @@ h6 {
 .header-logo-word {
     display: block;
     color: #E7ECFB;
-    font-family: "acumin-pro-condensed", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-weight: 700;
     font-size: clamp(15px, 1.5vw, 19px);
     line-height: 1.15;
@@ -363,13 +366,13 @@ h6 {
     display: inline-flex;
     align-items: center;
     color: #4CD7F6;
-    font-family: "acumin-pro-condensed", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-size: clamp(16px, 1.7vw, 20px);
     letter-spacing: 1px;
     border-left: 2px solid rgba(76, 215, 246, 0.35);
-    padding-left: 12px;
-    margin-left: 12px;
+    padding-left: clamp(6px, 1vw, 12px);
+    margin-left: clamp(6px, 1vw, 12px);
 }
 
 /* search (reused inside offcanvas) */
@@ -414,7 +417,7 @@ h6 {
 .header-top-element-info ul li a {
     display: inline-block;
     color: #DBDBDB;
-    font-family: "acumin-pro-condensed", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: clamp(14px, 1.6vw, 16px);
     font-weight: 600;
     line-height: 1.5;
@@ -442,7 +445,7 @@ h6 {
     display: inline-flex;
     align-items: center;
     color: #9CA9B0;
-    font-family: "acumin-pro-condensed", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: clamp(12.5px, 1vw, 15px);
     font-weight: 700;
     line-height: 1.5;
@@ -468,15 +471,15 @@ h6 {
     flex-shrink: 0;
     white-space: nowrap;
     color: #0B1326;
-    font-family: "acumin-pro-condensed", sans-serif;
-    font-size: clamp(13px, 1.2vw, 15px);
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(12px, 1.2vw, 14px);
     font-weight: 700;
     line-height: 1.4;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
     text-transform: uppercase;
     border-radius: 8px;
     background: #4CD7F6;
-    padding: 11px 22px;
+    padding: clamp(8px, 1vw, 10px) clamp(18px, 2vw, 22px);
     border: 1px solid transparent;
     transition: all 0.3s linear;
 }
@@ -514,7 +517,7 @@ h6 {
 }
 .offcanvas-brand {
     color: #E7ECFB;
-    font-family: "acumin-pro-condensed", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 1px;
@@ -639,7 +642,7 @@ h6 {
             align-items: center;
     gap: 10px;
     color: #DBE2E5;
-    font-family: "acumin-pro-condensed", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 0.3px;
@@ -738,12 +741,6 @@ h6 {
     font-size: 14px;
 }
 
-.offcanvas-header-info {
-    z-index: 2;
-    background: #E31827;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, calc(50% + 74px) 100%, calc(50% + 23px) calc(100% - 45px), 0 calc(100% - 45px), 0 0);
-            clip-path: polygon(100% 0, 100% 100%, calc(50% + 74px) 100%, calc(50% + 23px) calc(100% - 45px), 0 calc(100% - 45px), 0 0);
-}
 .offcanvas-header-info::before {
     content: "";
     position: absolute;
@@ -780,4 +777,364 @@ h6 {
 .main-menu-wrapper> .main-menu li.beverage-menu-items>.sub-menu {
     width: 414px;
 }
+
+
+
+/* ============ SKILLS CRAFT IT — HERO SECTION ============
+   Palette: navy #0B1326 / card #131B2E / cyan #4CD7F6 / red #E3494A
+   Fonts reused from project: acumin-pro / acumin-pro-condensed
+   ============================================================ */
+
+.sc-hero {
+    background: linear-gradient(180deg, #0B1326 0%, #060B16 100%);
+    padding: clamp(120px, 10vw, 150px) 0 clamp(50px, 5vw, 80px);
+}
+
+/* ---- left content ---- */
+.sc-hero-content {
+    max-width: 560px;
+    border-left: 1px solid rgba(76, 215, 246, 0.25);
+    padding-left: 28px;
+}
+.sc-hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4CD7F6;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.sc-hero-eyebrow-line {
+    display: inline-block;
+    width: 26px;
+    height: 2px;
+    background: #4CD7F6;
+}
+.sc-hero-title {
+    color: #F2F5FC;
+    line-height: 1.15;
+    margin-bottom: clamp(14px, 1.5vw, 24px);
+}
+.sc-hero-lead {
+    color: #E7ECFB;
+    font-size: clamp(15px, 1.4vw, 17px);
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: clamp(10px, 2vw, 18px);
+}
+.sc-hero-sub {
+    color: #8791A0;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: clamp(20px, 2vw, 34px);
+}
+
+/* ---- buttons ---- */
+.sc-hero-btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(12px, 2vw, 14px);
+}
+.sc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 13px 24px;
+    transition: all 0.3s linear;
+    white-space: nowrap;
+}
+.sc-btn svg { transition: transform 0.3s linear; }
+.sc-btn:hover svg { transform: translateX(3px); }
+
+.sc-btn-solid {
+    background: #4CD7F6;
+    color: #0B1326;
+    border: 1px solid transparent;
+}
+.sc-btn-solid:hover { background: #fff; color: #0B1326; }
+
+.sc-btn-outline {
+    background: transparent;
+    color: #4CD7F6;
+    border: 1px solid rgba(76, 215, 246, 0.5);
+}
+.sc-btn-outline:hover {
+    border-color: #4CD7F6;
+    background: rgba(76, 215, 246, 0.08);
+    color:#fff;
+}
+
+/* ---- dashboard mockup card ---- */
+.sc-dashboard {
+    background: #131B2E;
+    border: 1px solid rgba(76, 215, 246, 0.15);
+    border-radius: 14px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), 0 0 60px rgba(76, 215, 246, 0.05);
+    overflow: hidden;
+}
+.sc-dashboard-bar {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 12px 16px;
+    background: #0E1526;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.sc-dashboard-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+}
+.sc-dashboard-bar-title {
+    margin: 0 auto;
+    transform: translateX(-14px);
+    color: #6B7686;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.sc-dashboard-body {
+    padding: 16px;
+}
+.sc-dashboard-row {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+/* map panel */
+.sc-map-panel {
+    position: relative;
+    flex: 1 1 60%;
+    min-height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 30% 40%, rgba(76, 215, 246, 0.12), transparent 45%),
+        radial-gradient(circle at 70% 70%, rgba(76, 215, 246, 0.08), transparent 40%),
+        #0C1424;
+}
+.sc-map-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(76, 215, 246, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(76, 215, 246, 0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 60%, transparent 100%);
+            mask-image: radial-gradient(ellipse at center, #000 60%, transparent 100%);
+}
+.sc-map-pin {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px currentColor;
+    opacity: 0.35;
+}
+.sc-map-pin--cyan { background: #4CD7F6; color: rgba(76, 215, 246, 0.25); }
+.sc-map-pin--red  { background: #E3494A; color: rgba(227, 73, 74, 0.25); }
+
+.sc-live-chip {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(10, 16, 30, 0.85);
+    border: 1px solid rgba(76, 215, 246, 0.2);
+    border-radius: 8px;
+    padding: 10px 14px;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+}
+.sc-live-chip-title {
+    display: block;
+    color: #E7ECFB;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.sc-live-chip-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #4CD7F6;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.sc-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4CD7F6;
+    box-shadow: 0 0 0 0 rgba(76, 215, 246, 0.6);
+    animation: sc-pulse 1.8s infinite;
+}
+@keyframes sc-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(76, 215, 246, 0.55); }
+    70%  { box-shadow: 0 0 0 8px rgba(76, 215, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(76, 215, 246, 0); }
+}
+
+/* side cards (fleet status / analytics) */
+.sc-side-cards {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.sc-card {
+    flex: 1;
+    background: #0E1526;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+}
+.sc-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #6B7686;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.sc-stat-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.sc-stat-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sc-stat-list span {
+    color: #8791A0;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+}
+.sc-stat-list b {
+    color: #E7ECFB;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.sc-cyan { color: #4CD7F6 !important; }
+.sc-red  { color: #E3494A !important; }
+
+/* mini bar chart */
+.sc-bar-chart {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    min-height: 60px;
+}
+.sc-bar-chart span {
+    flex: 1;
+    background: rgba(76, 215, 246, 0.25);
+    border-radius: 3px 3px 0 0;
+    min-height: 6px;
+}
+.sc-bar-chart span.sc-bar-active {
+    background: #4CD7F6;
+}
+
+/* live operations panel */
+.sc-ops-panel {
+    background: #0E1526;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 14px 16px;
+}
+.sc-ops-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.sc-ops-head > span:first-child {
+    color: #6B7686;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.sc-badge {
+    background: rgba(76, 215, 246, 0.12);
+    color: #4CD7F6;
+    font-family: "Manrope", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    border: 1px solid rgba(76, 215, 246, 0.3);
+    border-radius: 100px;
+    padding: 3px 10px;
+}
+.sc-ops-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sc-ops-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sc-ops-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #E7ECFB;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.sc-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.sc-dot--cyan { background: #4CD7F6; }
+.sc-dot--red  { background: #E3494A; }
+.sc-ops-status {
+    color: #6B7686;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+.sc-ops-status--alert { color: #E3494A; }
 
