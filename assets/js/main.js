@@ -38,7 +38,7 @@
             $('.humbarger-btn').addClass('open');
             $('.btn-close span:nth-child(1)').css({
                 transform: 'rotate(45deg)',
-                marginBottom: '0'
+                marginBottom: '1px'
             });
             $('.btn-close span:nth-child(2)').css({
                 transform: 'rotate(-45deg)',
@@ -65,6 +65,9 @@
            player instance auto-closes the popup when playback ends, and
            the background placeholder video resumes when the popup closes.
            ================================================================== */
+
+
+           
 
 
         /* ==================================================================
