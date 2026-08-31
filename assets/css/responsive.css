@@ -1,0 +1,128 @@
+/*
+  The Name: Us Valve
+  File: responsive.css
+  Description: Responsive breakpoint overrides for main.css
+*/
+
+/* ==================================================================
+   BREAKPOINT INDEX
+   ------------------------------------------------------------------
+   1600px  - min-width 1500 (reserved, currently empty)
+   1500px  - min-width 1500 (reserved, currently empty)
+   1399px  - Large desktop / small laptop adjustments
+   1199px  - Tablet landscape / small laptop adjustments
+   991px   - Tablet portrait adjustments
+   767px   - Mobile landscape adjustments
+   575px   - Mobile portrait adjustments
+   479px   - Small mobile adjustments
+   383px   - Extra small mobile adjustments
+   360px   - Smallest supported mobile adjustments
+   ================================================================== */
+
+/* ==================================================================
+   MAX-WIDTH: 1600px (reserved)
+   ================================================================== */
+@media (max-width: 1600px) {
+
+    
+}
+
+/* ==================================================================
+   MAX-WIDTH: 1500px (reserved)
+   ================================================================== */
+@media (max-width: 1500px) {
+   
+}
+@media (min-width: 992px) and (max-width: 1500px) {
+
+}
+/* ==================================================================
+   MAX-WIDTH: 1399.98px
+   Large desktop / small laptop: tighten resource banner width,
+   footer menu column, and industry-solutions card padding.
+   ================================================================== */
+@media (max-width: 1399.98px) {
+
+    
+
+}
+
+/* ==================================================================
+   MAX-WIDTH: 1199.98px
+   Tablet landscape: container gutters, header nav font-size,
+   value-props stacking, video promo / spec quote widths,
+   product-catalog stripe offsets, resource banner and footer widths.
+   ================================================================== */
+@media (max-width: 1199.98px) {
+    .container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+   
+
+
+
+}
+
+/* ==================================================================
+   MAX-WIDTH: 991.98px
+   Tablet portrait: header simplifies to non-fixed padding, banner
+   content goes full-width, metrics ribbon stacks, video/spec-quote
+   sections stack, product-catalog title bleeds edge-to-edge,
+   placement cards drop their dividers.
+   ================================================================== */
+@media (max-width: 991.98px) {
+
+    
+
+
+}
+
+/* ==================================================================
+   MAX-WIDTH: 767.98px
+   Mobile landscape: value-props padding tightened, spec-quote
+   decorative lines repositioned in viewport units.
+   ================================================================== */
+@media (max-width: 767.98px) {
+    
+}
+
+/* ==================================================================
+   MAX-WIDTH: 575.98px
+   Mobile portrait: industry-solutions card sizing/typography scaled
+   down, product-catalog heading min-height removed.
+   ================================================================== */
+@media (max-width: 575.98px) {
+   
+}
+
+/* ==================================================================
+   MAX-WIDTH: 479.98px
+   Small mobile: promo video and spec-quote image heights fixed for
+   narrow screens.
+   ================================================================== */
+@media (max-width: 479.98px) {
+
+    
+
+
+}
+
+/* ==================================================================
+   MAX-WIDTH: 383.98px
+   Extra small mobile: spec-quote decorative line repositioning.
+   ================================================================== */
+@media (max-width: 383.98px) {
+    
+}
+
+/* ==================================================================
+   MAX-WIDTH: 360px
+   Smallest supported mobile: button sizing, industry-solutions card
+   view-btn/heading tweaks, footer shape offset.
+   ================================================================== */
+@media (max-width: 360px) {
+    
+
+}
+/* END OF RESPONSIVE.CSS */
