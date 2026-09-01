@@ -73,7 +73,7 @@
    ================================================================== */
 @media (max-width: 991.98px) {
 
-        .sc-dashboard { margin-top: 10px; }
+   .sc-dashboard { margin-top: 10px; }
 
 
 }
@@ -114,7 +114,12 @@
    Extra small mobile: spec-quote decorative line repositioning.
    ================================================================== */
 @media (max-width: 383.98px) {
-    
+   .sc-workflow-step {
+      flex-basis: 100%;
+   }
+   .sc-workflow-arrow {
+      transform: rotate(90deg);
+   }
 }
 
 /* ==================================================================

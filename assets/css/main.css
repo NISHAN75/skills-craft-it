@@ -71,6 +71,7 @@ body {
     font-weight: 400;
     font-family: "Inter", sans-serif;
     color: #000;
+    background: #060B16;
     
 }
 main{
@@ -1181,7 +1182,7 @@ h6 {
 .sc-features-title {
     color: #E7ECFB;
     font-family: "Manrope", sans-serif;
-    font-size: clamp(26px, 3vw, 38px);
+    font-size: clamp(24px, 3vw, 38px);
     font-weight: 700;
     line-height: 1.25;
     margin-bottom: 16px;
@@ -1197,7 +1198,7 @@ h6 {
 /* ---- card + hover effect ---- */
 .sc-feature-card {
     position: relative;
-    padding: 32px 26px;
+    padding:clamp(24px, 2.5vw, 32px) clamp(20px, 2vw, 26px);
     background: #0E1526;
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 14px;
@@ -1284,9 +1285,7 @@ h6 {
 
 /* ---- scrollable track ---- */
 .sc-workflow-track {
-    gap: 10px;
-    padding-bottom: 4px;
-    scrollbar-width: none;
+    gap: 12px;
 }
 .sc-workflow-track::-webkit-scrollbar {
     display: none;
@@ -1295,7 +1294,7 @@ h6 {
 /* ---- step pill ---- */
 .sc-workflow-step {
     flex: 0 0 auto;
-    padding: 9px 18px;
+    padding: clamp(7px, 1vw, 9px) clamp(12px, 2vw, 18px);
     background: #0E1526;
     border: 1px solid rgba(76, 215, 246, 0.2);
     border-radius: 100px;
@@ -1303,6 +1302,7 @@ h6 {
     font-family: "Manrope", sans-serif;
     font-size: 13px;
     font-weight: 600;
+    text-align: center;
     white-space: nowrap;
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
@@ -1332,4 +1332,214 @@ h6 {
     flex: 0 0 auto;
     color: #3B4759;
     font-size: 14px;
+}
+
+
+/* ==================================================================
+   18B. FUTURE & INNOVATION SECTION
+   ================================================================== */
+
+.sc-future {
+    position: relative;
+    padding: clamp(70px, 9vw, 130px) 0;
+    background: #0B1120;
+}
+
+
+
+/* ---- eyebrow ---- */
+.sc-future-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4CD7F6;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.sc-future-eyebrow-line {
+    width: 20px;
+    height: 1px;
+    background: #4CD7F6;
+}
+
+/* ---- heading / copy ---- */
+.sc-future-title {
+    color: #E7ECFB;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(28px, 3.2vw, 42px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+.sc-future-lead {
+    max-width: 480px;
+    color: #8791A0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 32px;
+}
+
+/* ---- buttons row ---- */
+.sc-future-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* ---- right visual panel ---- */
+.sc-future-panel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(155deg, #182338 0%, #0E1526 100%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ==================================================================
+   18C. LONG-TERM VISION SECTION
+   ================================================================== */
+
+.sc-vision {
+    padding: clamp(60px, 7vw, 100px) 0;
+    background: #0A0F1C;
+}
+
+/* ---- eyebrow / heading ---- */
+.sc-vision-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #6B7686;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.sc-vision-eyebrow-line {
+    width: 16px;
+    height: 1px;
+    background: #4CD7F6;
+}
+.sc-vision-title {
+    color: #E7ECFB;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* ---- tagline + body copy row ---- */
+.sc-vision-row {
+    margin-bottom: 56px;
+}
+.sc-vision-tagline {
+    color: #4CD7F6;
+    font-family: "Manrope", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+}
+.sc-vision-body {
+    color: #8791A0;
+    font-family: "Inter", sans-serif;
+    font-size: 14.5px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+.sc-vision-body:last-child {
+    margin-bottom: 0;
+}
+
+/* ---- connected node strip ---- */
+.sc-node-track {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    padding: clamp(20px, 2.5vw, 32px) clamp(16px, 2vw, 24px);
+    background: #0E1526;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.sc-node-track::-webkit-scrollbar {
+    display: none;
+}
+
+.sc-node {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 110px;
+    text-align: center;
+}
+.sc-node-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(76, 215, 246, 0.08);
+    border: 1px solid rgba(76, 215, 246, 0.25);
+    color: #4CD7F6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sc-node-label {
+    color: #8791A0;
+    font-family: "Manrope", sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* connecting line between nodes */
+.sc-node-line {
+    flex: 1 1 auto;
+    align-self: flex-start;
+    margin-top: 22px;
+    height: 1px;
+    min-width: 24px;
+    background: linear-gradient(90deg, rgba(76, 215, 246, 0.35), rgba(76, 215, 246, 0.1));
+}
+
+/* mid-point emphasis node (e.g. Connected Tech) */
+.sc-node--center .sc-node-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(76, 215, 246, 0.14);
+    border-color: rgba(76, 215, 246, 0.4);
+}
+.sc-node--center .sc-node-label {
+    color: #E7ECFB;
+}
+
+/* final / highlighted node (e.g. AI Solutions) */
+.sc-node--active .sc-node-icon {
+    background: #4CD7F6;
+    color: #0B1326;
+    border-color: #4CD7F6;
+    box-shadow: 0 0 24px rgba(76, 215, 246, 0.4);
+}
+.sc-node--active .sc-node-label {
+    color: #4CD7F6;
+}
+
+/* mobile: stack tighter, keep horizontal scroll on node strip */
+@media (max-width: 575px) {
+    .sc-node-label { font-size: 11.5px; }
+    .sc-node { width: 90px; }
 }
